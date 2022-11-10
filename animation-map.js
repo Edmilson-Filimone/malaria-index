@@ -1,5 +1,6 @@
-const btn = document.querySelector("#btn");
-let year = document.querySelector("#Year");
+function animateMap(buttonId, inputRangeID){
+const btn = document.querySelector(`${buttonId}`);
+let year = document.querySelector(`${inputRangeID}`);
 
 btn.addEventListener("click", (e) => {
   let ano = 2009;
@@ -13,3 +14,8 @@ btn.addEventListener("click", (e) => {
     }
   }, 1000);
 });
+}
+
+animateMap("#btn_a", "#Year_a")
+animateMap("#btn_c", "#Year_c")
+animateMap("#btn_e", "#Year_e")
